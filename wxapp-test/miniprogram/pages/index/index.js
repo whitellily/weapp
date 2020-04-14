@@ -1,5 +1,8 @@
 const util = require('../../utils/util.js')
-
+var moment=require('moment');
+var base64=require('js-base64');
+// var base64 = require('../../node_modules/js-base64/base64.js');
+// import base64 from '../../node_modules/js-base64/base64.js'
 Page({
   data: {
     list: [],
@@ -8,7 +11,13 @@ Page({
     loading: false
   },
   onLoad () {
-    this.fetchLatest()
+    this.fetchLatest();
+    console.log("今天的日期是0000：")
+    console.log(moment().calendar()); 
+    console.log("base64：")
+    // var srcstr = '不要问我从哪里来';
+    // var base64str = base64.encode(srcstr);
+    // console.log(base64str);  
   },
   fetchLatest () {
     if (this.data.loading) {

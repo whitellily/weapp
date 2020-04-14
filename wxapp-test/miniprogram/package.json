@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tencent/imwxutils": "^2.1.0",
+    "js-base64": "^2.5.2",
+    "moment": "^2.24.0",
     "regenerator-runtime": "^0.11.1"
   }
 }

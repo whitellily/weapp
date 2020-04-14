@@ -37,7 +37,8 @@
     },
     "cz-customizable": {
       "config": "node_modules/commitlint-config-imt/cz-config.js"
-    }
+    },
+    "port" : "56371"
   },
   "keywords": [],
   "author": "",
